@@ -14,10 +14,7 @@ from conda_index.utils import DEFAULT_SUBDIRS
 @click.argument("dir")
 @click.option("--output", help="Output repodata to given directory")
 @click.option(
-    "--subdir",
-    multiple=True,
-    default=None,
-    help="Subdir to index. Accepts multiple.",
+    "--subdir", multiple=True, default=None, help="Subdir to index. Accepts multiple.",
 )
 @click.option(
     "-n",
@@ -38,10 +35,7 @@ from conda_index.utils import DEFAULT_SUBDIRS
     show_default=True,
 )
 @click.option(
-    "--bz2/--no-bz2",
-    help="Write repodata.json.bz2?",
-    default=False,
-    show_default=True,
+    "--bz2/--no-bz2", help="Write repodata.json.bz2?", default=False, show_default=True,
 )
 @click.option(
     "--current-index-versions-file",
